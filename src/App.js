@@ -1,15 +1,15 @@
-import React from 'react'
+import { createRoot } from 'react-dom/client';
+
+
 import Board from "./Board/Board";
 
 import './App.css';
 
 
 function App() {
-  return (
-    <div className='App'>
-        <Board />
-    </div>
-  )
+
+  const root = createRoot(document.getElementById("root"));
+  root.render(<App />);
 }
 
 export default App
